@@ -72,10 +72,9 @@ app.get("/", function (req, res) {
 app.post("/", function (req, res) {
   var n1 = Number(req.body.num1);
   var n2 = Number(req.body.num2);
-  console.log;
-  console.log(req.query.num1, req.query.num2);
+  // console.log(req.query.num1, req.query.num2);
   let ret = jvn_algo(n1, n2);
-  console.log(ret);
+  // console.log(ret);
   var obj = {
     f_no: n1,
     s_no: n2,
@@ -97,7 +96,7 @@ app.get("/jvn", function (req, res) {
   n1 = Number(n1);
   n2 = Number(n2);
   let ret = jvn_algo(n1, n2);
-  console.log(ret);
+  // console.log(ret);
   var obj = {
     f_no: n1,
     s_no: n2,
@@ -113,7 +112,7 @@ app.get("/hrng", function (req, res) {
   n1 = Number(n1);
   n2 = Number(n2);
   let ret = hrng(n1, n2);
-  console.log(ret);
+  // console.log(ret);
   var obj = {
     f_no: n1,
     s_no: n2,
