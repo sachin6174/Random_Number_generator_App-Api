@@ -290,6 +290,6 @@ app.get("/mixed", (req, res) => {
 
 
 //////// listning/////
-app.listen(3500, function () {
+app.listen(process.env.PORT||3500, function () {
   console.log("server started on port 3500");
 });
